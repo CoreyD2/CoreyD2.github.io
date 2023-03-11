@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <title>Corey Deeves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="toggle-switch.css" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav>
+                <h1>Corey Deeves</h1>
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="https://drive.google.com/file/d/1EQdGiRG8vPmt4dpG2l3SYUJ77OjtG3Uz/view?usp=sharing" target="_blank" >Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="controls">
+                <label class="toggle-switch">
+                    Dark Mode
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <div class="toggle-switch-border">
+                        <div class="toggle-switch-dot"></div>
+                    </div>
+                </label>
+            </div>
+        </header>
+
+        <section class="bio">
+            <img class="profile-image" src="https://avatars.githubusercontent.com/u/71098087?s=400&u=d0750722d14a26a8359d6aa4abbc96b4ddb398a4&v=4" />
+            <div>
+                <h2 class="intro">Hey! My name is Corey Deeves, and I am a self-started software engineer!</h2>
+                <p>
+                    I have been coding and creating quality of life projects since 2018. I have experience in back-end development (C#). I love adapting and 
+                    learning new languages and currently learning web design (HTML, CSS, JavaScript) and programming (Python). While I am not coding, I enjoy playing Rocket League, Minecraft, and
+                    learning the guitar.
+                </p>
+                <a class="btn" href="https://github.com/CoreyD2?tab=repositories" target="_blank">Check out my work</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Recent Work</h2>
+            <article id="bowling" class="fade-in">
+                <div>
+                    <h3>Bowling Program</h3>
+                    <p>Making bowling leagues easier to organize</p>
+                    <strong>February 2023</strong>
+                    <ul>
+                        <li>Update league scores weekly and show point standings every week.</li>
+                        <li>Creates a PDF for easy readability.</li>
+                        <li>Auto calculate players' season average and handicap.</li>
+                        <li>Keep track of Year-to-Date(YTD) stats for players to see.</li>
+                    </ul>
+                    <a href="https://github.com/CoreyD2/Bowling-Project" target="_blank">GitHub Repo</a>
+                </div>
+                <img class="article-img" src="https://cdn.pixabay.com/photo/2014/01/03/02/48/bowling-237905_960_720.jpg" />
+            </article>
+            <article id="project" class="fade-in">
+                <div>
+                    <h3>Project Tracker</h3>
+                    <p>Track the progress and priority of projects</p>
+                    <strong>August 2022</strong>
+                    <ul>
+                        <li>Create, edit, and delete projects.</li>
+                        <li>Set priority to projects based on importance.</li>
+                        <li>Search for projects based on name and/or description.</li>
+                        <li>Utilizing: C#, SQL Server, ASP.NET, Visual Studio, GitHub</li>
+                    </ul>
+                    <a class="project-button" href="https://github.com/CoreyD2/ProjectTracker" target="_blank">GitHub Repo</a>
+                </div>
+                <img class="article-img" src="https://assets.website-files.com/634681057b887c6f4830fae2/6367dd62f31a1823773d148c_6259f6658721400d98bb2c20_project-management-calendar.png" />
+            </article>
+            <article id="laundro" class="fade-in">
+                <div>
+                    <h3>LaundroApp</h3>
+                    <p>Helping students plan time for laundry in residence halls</p>
+                    <strong>March 2021</strong>
+                    <ul>
+                        <li>Used C# and XAML to construct a proof-of-concept WPF application with a team of 2, that allows residents to view and make (or delete) reservations of laundry facilities.</li>
+                        <li>Implemented Login and Reservation View/Deletion pages utilizing an XML database to validate</li>
+                        <li>Utilized: C#, XAML, XML, WPF, Visual Studio, GitHub</li>
+                    </ul>
+                    <a href="https://github.com/CoreyD2/LaundroApp" target="_blank">GitHub Repo</a>
+                </div>
+                <img class="article-img" src="https://www.thespruce.com/thmb/IySRc5BlA0bBLq0_kumdr0LKXIc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tips-for-easier-laundromat-trips-2145703-hero-7284dc0c51e647dab28aae46fdc6428e.jpg" />
+            </article>
+            <article id="zombie" class="fade-in">
+                <div>
+                    <h3>Zombie Onslaught</h3>
+                    <p>Created 2D zombies game with a challenge to survive as long as possible</p>
+                    <strong>December 2020</strong>
+                    <ul>
+                        <li>Developed a 2-D game using C++ and OpenGL with a team of 8, that gives a player a round based, zombie shooter experience.</li>
+                        <li>Lead and Programmed the FPS timer using chrono library to accurately dictate the number of frames being shown every second.</li>
+                        <li>Lead the Programming and Development of the Particle Manager which took advantage of the glm library to take advantage of vectors for all the particles.</li>
+                        <li>Utilized: C++, OpenGL, Visual Studio, GitHub</li>
+                    </ul>
+                    <a href="https://github.com/jeremy1357/Zombie-Onslaught" target="_blank">GitHub Repo</a>
+                </div>
+                <img class="article-img" src="https://raw.githubusercontent.com/jeremy1357/Zombie-Onslaught/master/Zombie_Onslaught_Picture.png" />
+            </article>
+        </section>
+
+        <section class="fade-in">
+            <h2>Future Projects</h2>
+            <article>
+                <div>
+                    <h3>Flight Notifications</h3>
+                    <p>Send email notifications for upcoming flights based on filterable requirements</p>
+                    <ul>
+                        <li>Send notifications when the price for a flight falls below a certain price.</li>
+                        <li>Filter to search spcific airlines and airports.</li>
+                        <li>Looking to learn and use Python</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/corey-deeves-a3a1041ab/" target="_blank">
+                        LinkedIn
+                        <span class="link-icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1EQdGiRG8vPmt4dpG2l3SYUJ77OjtG3Uz/view?usp=sharing" target="_blank">
+                        CV
+                        <span class="link-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/CoreyD2" target="_blank">
+                        GitHub
+                        <span class="link-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copywright">© 2023 Corey Deeves</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
