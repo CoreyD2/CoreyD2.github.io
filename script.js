@@ -9,48 +9,48 @@ class CssPropControl {
     set(varName, val) {
       return this.element.style.setProperty(varName, val)
     }
-  }
+}
+
+const bodyCssProps = new CssPropControl(document.body)
+
+let toggle = document.querySelector('#dark-mode-toggle')
+toggle.addEventListener('click', () => { 
+  let mode = toggle.checked ? 'dark' : 'light'
+  bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`))
+  bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`))
+  bodyCssProps.set('--link', bodyCssProps.get(`--${mode}-link`))
+})
   
-  const bodyCssProps = new CssPropControl(document.body)
+//   var bowling = document.getElementById('bowling');
+//   var project = document.getElementById('project');
+//   var laundro = document.getElementById('laundro');
+//   var zombie = document.getElementById('zombie');
   
-  let toggle = document.querySelector('#dark-mode-toggle')
-  toggle.addEventListener('click', () => { 
-    let mode = toggle.checked ? 'dark' : 'light'
-    bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`))
-    bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`))
-    bodyCssProps.set('--link', bodyCssProps.get(`--${mode}-link`))
-  })
+//   //fade out
+//   function FadeOutOnScroll(element) {
+//      if (!element) {
+//          return;
+//      }
   
-  var bowling = document.getElementById('bowling');
-  var project = document.getElementById('project');
-  var laundro = document.getElementById('laundro');
-  var zombie = document.getElementById('zombie');
+//      var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+//      var elementHeight = element.offsetHeight;
+//      var scrollTop = document.documentElement.scrollTop;
+//      var opacity = 1;
   
-  //fade out
-  //function FadeOutOnScroll(element) {
-  //    if (!element) {
-  //        return;
-  //    }
+//      if (scrollTop > distanceToTop) {
+//          opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+//      }
   
-  //    var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-  //    var elementHeight = element.offsetHeight;
-  //    var scrollTop = document.documentElement.scrollTop;
-  //    var opacity = 1;
+//      if (opacity >= 0) {
+//          element.style.opacity = opacity;
+//      }
+//   }
   
-  //    if (scrollTop > distanceToTop) {
-  //        opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
-  //    }
+//   function scrollHandler() {
+//      FadeOutOnScroll(bowling);
+//      FadeOutOnScroll(project);
+//      FadeOutOnScroll(laundro);
+//      FadeOutOnScroll(zombie);
+//   }
   
-  //    if (opacity >= 0) {
-  //        element.style.opacity = opacity;
-  //    }
-  //}
-  
-  //function scrollHandler() {
-  //    FadeOutOnScroll(bowling);
-  //    FadeOutOnScroll(project);
-  //    FadeOutOnScroll(laundro);
-  //    FadeOutOnScroll(zombie);
-  //}
-  
-  //window.addEventListener('scroll', scrollHandler)
+//   window.addEventListener('scroll', scrollHandler)
